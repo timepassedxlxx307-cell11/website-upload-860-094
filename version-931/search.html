@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索影片 - 久久在线</title>
+  <meta name="description" content="搜索国产短剧、电影、剧集、地区、年份和题材，快速进入可播放详情页。精选国产免费短剧资源，涵盖都市、古装、甜宠等热门题材，每日更新，满足你的追剧需求！">
+  <meta name="keywords" content="影片搜索,短剧搜索,在线搜索,国产短剧,免费短剧,都市短剧,古装短剧,甜宠短剧,短剧资源,在线观看,每日更新,热门题材,追剧">
+  <link rel="stylesheet" href="./assets/original.css">
+  <link rel="stylesheet" href="./assets/site.css">
+  <script src="./assets/search-data.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="site-navbar" aria-label="主导航">
+    <a class="brand" href="./index.html" aria-label="久久在线">
+      <span class="brand-mark">久</span>
+      <span class="brand-text">久久在线</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="展开导航" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="site-nav">
+      <div class="nav-links">
+          <a class="nav-link" href="./index.html">首页</a>
+          <a class="nav-link" href="./categories.html">分类</a>
+          <a class="nav-link" href="./ranking.html">排行榜</a>
+          <a class="nav-link active" href="./search.html">搜索</a>
+          <a class="nav-link" href="./categories/domestic-short.html">国产精选</a>
+          <a class="nav-link" href="./categories/urban-drama.html">都市短剧</a>
+          <a class="nav-link" href="./categories/ancient-romance.html">古装甜宠</a>
+          <a class="nav-link" href="./categories/suspense-thriller.html">悬疑惊悚</a>
+      </div>
+      <form class="nav-search" action="./search.html" method="get" data-search-form>
+        <input type="search" name="q" placeholder="搜索影片、类型、地区" autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="page-hero">
+    <h1>搜索影片</h1>
+    <p>输入影片名称、题材、地区或年份，配合筛选条件快速定位想看的内容。</p>
+    <form class="search-panel" data-live-search>
+      <input type="search" name="q" placeholder="输入关键词">
+      <select name="type"><option value="">全部类型</option><option value="Movie">Movie</option><option value="TV Series">TV Series</option><option value="TV剧集">TV剧集</option><option value="TV动画">TV动画</option><option value="剧集">剧集</option><option value="剧集 剧情/现实">剧集 剧情/现实</option><option value="剧集 动画">剧集 动画</option><option value="剧集(短片)">剧集(短片)</option><option value="剧集/动画">剧集/动画</option><option value="剧集/真人秀改编">剧集/真人秀改编</option><option value="剧集/第一季">剧集/第一季</option><option value="剧集/综艺衍生剧">剧集/综艺衍生剧</option><option value="动漫">动漫</option><option value="动画">动画</option><option value="动画/剧集">动画/剧集</option><option value="动画剧集">动画剧集</option><option value="动画电影">动画电影</option><option value="动画短片">动画短片</option><option value="单口喜剧特辑">单口喜剧特辑</option><option value="史诗电影">史诗电影</option><option value="现场影像">现场影像</option><option value="电影">电影</option><option value="电影 动作">电影 动作</option><option value="电影 悬疑,爱情,惊悚">电影 悬疑,爱情,惊悚</option><option value="电影,动画">电影,动画</option><option value="电影/动画">电影/动画</option><option value="电影/限制级">电影/限制级</option><option value="电影动画">电影动画</option><option value="电视剧">电视剧</option><option value="电视剧 (30集)">电视剧 (30集)</option><option value="电视剧 (历史剧)">电视剧 (历史剧)</option><option value="电视剧/动画">电视剧/动画</option><option value="电视剧/古装仙侠">电视剧/古装仙侠</option><option value="电视剧/季播">电视剧/季播</option><option value="电视剧/电影">电视剧/电影</option><option value="电视剧/第一季">电视剧/第一季</option><option value="电视剧/网剧">电视剧/网剧</option><option value="电视剧系列">电视剧系列</option><option value="电视剧集">电视剧集</option><option value="纪录片">纪录片</option><option value="纪录片 人文">纪录片 人文</option><option value="纪录片/警务纪实">纪录片/警务纪实</option><option value="纪录片/音乐会电影">纪录片/音乐会电影</option><option value="综艺">综艺</option><option value="综艺/剧集">综艺/剧集</option><option value="综艺/晚会">综艺/晚会</option><option value="综艺/特别篇">综艺/特别篇</option><option value="综艺/真人秀">综艺/真人秀</option><option value="综艺/纪实">综艺/纪实</option><option value="网剧">网剧</option><option value="网络剧">网络剧</option><option value="网络剧/电影">网络剧/电影</option><option value="网络动画电影">网络动画电影</option><option value="网络电影">网络电影</option></select>
+      <select name="year"><option value="">全部年份</option><option value="2029">2029</option><option value="2028">2028</option><option value="2027">2027</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1973">1973</option><option value="1972">1972</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1959">1959</option><option value="1958">1958</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1946">1946</option><option value="1945">1945</option><option value="1932">1932</option></select>
+      <button type="submit">搜索</button>
+    </form>
+    <p class="search-result-note" data-search-note></p>
+  </section>
+  <section class="section-block">
+    <div class="main-wrap">
+      <div class="movie-grid four" data-search-results></div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h2>久久在线</h2>
+      <p>精选国产免费短剧资源，涵盖都市、古装、甜宠等热门题材，每日更新，满足你的追剧需求！</p>
+    </div>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类总览</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+    </div>
+  </div>
+</footer>
+<script src="./assets/site.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
